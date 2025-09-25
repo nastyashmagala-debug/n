@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Проєкти — Мій сайт</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Мій сайт</h1>
+      <nav>
+        <a href="index.html">Головна</a>
+        <a href="about.html">Про мене</a>
+        <a href="projects.html">Проєкти</a>
+        <a href="contact.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Мої проєкти</h2>
+    <ul>
+      <li>Навчальний сайт — цей проєкт</li>
+      <li>Маленький блог на HTML</li>
+      <li>Презентація з CSS стилями</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Мій сайт</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
