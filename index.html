@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Головна — Мій сайт</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Мій сайт</h1>
+      <nav>
+        <a href="index.html">Головна</a>
+        <a href="about.html">Про мене</a>
+        <a href="projects.html">Проєкти</a>
+        <a href="contact.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Ласкаво просимо!</h2>
+    <p>Це моя перша вебсторінка, створена на HTML і CSS.</p>
+
+    <section class="cards">
+      <article class="card">
+        <h3>Про мене</h3>
+        <p>Дізнайся більше на сторінці «Про мене».</p>
+      </article>
+      <article class="card">
+        <h3>Проєкти</h3>
+        <p>Приклади робіт дивись у розділі «Проєкти».</p>
+      </article>
+      <article class="card">
+        <h3>Контакти</h3>
+        <p>Напиши мені через email у розділі «Контакти».</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Мій сайт</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
